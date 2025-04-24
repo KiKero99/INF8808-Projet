@@ -1,0 +1,80 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+env/
+venv/
+ENV/
+.venv/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# VS Code settings
+.vscode/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# PyInstaller
+dist/
+build/
+*.spec
+
+# Test, coverage, and profiling
+htmlcov/
+.tox/
+.nox/
+.coverage
+.cache
+.pytest_cache/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# Logs
+*.log
+
+# Dash, Streamlit, Flask cache
+__dash_cache__/
+.streamlit/
+
+# Environment variable files
+.env
+.env.*
+
+# Local database or state
+*.sqlite3
+*.db
+*.h5
+*.hdf5
+
+# node_modules for fullstack projects
+node_modules/
+
+# Compiled JS/CSS
+*.min.js
+*.min.css
+
+# Build artifacts
+*.egg-info/
+.eggs/
+MANIFEST
+
+# Ignore everything in docs/_build/
+docs/_build/

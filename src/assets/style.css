@@ -1,0 +1,289 @@
+body {
+    font-size: 16px;
+    background-color: #f8f9fa;
+    margin: 0;
+    display: flex;
+    overflow-x: hidden;
+    font-family: 'Merriweather', serif;
+}
+
+.top-bar{
+    width: 98vw;
+    padding: 1vw;
+    background-color: #467575; 
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    font-weight: bold;
+    color: white;
+}
+
+
+
+.left {
+    justify-self: left;
+    align-self: center;
+    font-size: 1vw;
+}
+
+.center {
+    justify-self: center;
+    align-self: center;
+    font-size: 3vw;
+}
+
+.right {
+    justify-self: right;
+    align-self: center;
+    height: 3vw;
+    width: auto;
+}
+
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 10vw;
+    background-color: #1f2c3f;
+    padding: 30px 20px;
+    font-size: 1vw;
+    color: white;
+    overflow-y: auto;
+    z-index: 1000;
+
+}
+
+.sidebar-title {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 5vw !important;
+}
+
+.nav-link {
+    display: block;
+    color: white;
+    padding: 10px 0;
+    text-decoration: none;
+    border-left: 3px solid transparent;
+    transition: all 0.2s ease;
+    font-size: 1vw !important;
+
+
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    background-color: #34495e;
+    border-left: 3px solid #1abc9c;
+    padding-left: 10px;
+}
+
+.main-content {
+    margin-left: 17.5vw;
+    margin-right: 17.5vw;
+    width: 65vw;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.content-wrapper {
+    width: 90%;
+}
+
+.page-header {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.main-title {
+    font-size: 40px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.page-description {
+    font-size: 18px;
+    color: #7f8c8d;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-bottom: 25px;
+    font-style: italic;
+}
+
+.content-section {
+    margin-bottom: 80px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.content-section h3 {
+    font-size: 26px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.content-section p {
+    color: #7f8c8d;
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.graph-container {
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .main-content {
+        margin-left: 0;
+        padding: 20px;
+    }
+}
+
+
+.sidebar-title {
+    font-size: 0.8vw !important;
+}
+
+#day-checklist {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 1vw;
+    padding-bottom: 1%;
+    color: #2c3e50; 
+    font-weight: bold;
+}
+
+#day-checklist input[type="checkbox"] {
+    width: 1vw;            
+    height: 1vw;
+    align-self: center;
+    justify-self: center;
+}
+
+#day-checklist label {
+  align-items: center;
+  display: flex;
+  justify-content: center;  
+}
+
+.paragraph-style {
+    font-size: 2.5vh !important;
+}
+
+.toggle-btn {
+    background: none;
+    border: none;
+    font-size: 1.5vw;
+    color: white;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+}
+
+
+.sidebar.collapsed {
+    width: 3vw;
+    padding: 30px 10px;
+}
+
+.sidebar.collapsed .sidebar-title,
+.sidebar.collapsed .nav-link {
+    display: none;
+}
+
+.sidebar.collapsed ~ .main-content {
+    margin-left: 3vw;
+    width: 97vw;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    flex-direction: column;
+}
+
+.button-season {
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    border: 2px solid transparent;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: capitalize;
+    color: #fff;
+    background-color: #f1f1f1;
+    max-width: 150px;
+    justify-self: center;
+    align-self: center;
+}
+
+.button-season:hover {
+    background-color: #ddd;
+}
+
+.button-season.selected {
+    background-color: #4CAF50;
+    color: white;
+    border: 2px solid #4CAF50;
+}
+
+.button-season.not-select {
+    background-color: #e0e0e0;
+    color: #aaa;
+    border: 2px solid #ccc;
+    opacity: 0.5;
+}
+.button-season:focus {
+    outline: none;
+}
+
+.button-season:active {
+    transform: scale(0.98);
+}
+
+.button-selector{
+    align-self: center;
+    justify-self: center;
+    font-size: 1vw;
+    color: #2c3e50; 
+    font-weight: bold;
+}
+
+#year-slider {
+    margin-bottom: 50px !important;
+    margin-top: 50px !important;
+
+}
+
+.title-season{
+    align-self: center;
+    justify-self: center;
+    font-weight: bold;
+    font-size: 24px; 
+    color: #2c3e50; 
+    text-align: center;
+}
