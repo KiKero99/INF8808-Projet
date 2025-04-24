@@ -1,4 +1,4 @@
-# INF8808 — Dashboard d’analyse
+# INF8808
 
 Projet réalisé dans le cadre du cours **INF8808 — Visualisation de données**.
 
